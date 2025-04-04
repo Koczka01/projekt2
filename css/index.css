@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+    height: 10vh;
+    background-color: #c76d39;
+    padding-top: auto;
+    line-height: 10vh;
+    padding: 0vw 4vw 0vw 2vw;
+}
+header div{
+    float: right;
+    vertical-align: auto;
+    height: 10vh;
+}
+header div a{
+    text-decoration: none;
+    color: #2E1A5B;
+    font-family: "myFirstFont";
+    margin-left: 2vw;
+    font-size: 2.5vw;
+}
+header h1{
+    display: inline-block;
+    margin: auto;
+    vertical-align: auto;
+    font-family: "myFirstFont";
+    font-size: 5vw;
+    color: #6f7351;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/KaushanScript-Regular.ttf);
+  }
