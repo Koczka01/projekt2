@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: #E8D5B5;
 }
 header{
     display: block;
@@ -9,6 +10,9 @@ header{
     padding-top: auto;
     line-height: 5vw;
     padding: 0vw 4vw 0vw 2vw;
+    position: fixed;
+    width: 95%;
+    top: 0;
 }
 header div{
     float: right;
@@ -33,14 +37,100 @@ header h1{
 #bevezeto{
     display: grid;
     grid-template-columns: 40vw 40vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-top: 3vw;
+    gap: 10vw;
+    font-family: "myFirstFont";
+    color: #6f7351;
+    margin-top: 7vw;
 }
 #bevezeto #bal{
     width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 6vw;
+}
+#bevezeto #bal p{
+    font-family: "myFirstFont";
+    color: #c76d39;
+}
+#bevezeto #bal button{
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    background-color: rgb(185, 185, 185);
+    font-family: "myFirstFont";
 }
 #bevezeto #jobb{
     width: 100%;
+}
+#ertekelesek{
+    margin-top: 5vw;
+    display: flex;
+    gap: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    font-family: "myFirstFont";
+    margin-bottom: 5vw;
+}
+#ertekelesek #elso{
+    flex: 1;
+    text-align: center;
+    font-size: 1vw;
+}
+#ertekelesek #masodik{
+    flex: 1;
+    text-align: center;
+    font-size: 1vw;
+}
+#ertekelesek #harmadik{
+    flex: 1;
+    text-align: center;
+    font-size: 1vw;
+}
+#profilkep{
+    width: 5vw;
+    border-radius: 3vw;
+}
+footer{
+    display: grid;
+    grid-template-columns: 10vw 20vw 10vw 10vw 10vw 10vw 12vw 5vw 5vw 5vw;
+    text-align: center;
+    background-color: #c76d39;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-family: "myFirstFont";
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+}
+footer img{
+    width: 4vw;
+    margin: auto;
+}
+footer #elso{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    line-height: 5vw;
+    padding: auto;
+}
+footer #elsoa{
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+footer h1, footer #elso, footer #masodik, footer #harmadik, footer #negyedik{
+    margin: auto;
+    color: #2E1A5B;
+}
+
+footer h1{
+    font-size: 3vw;
+    font-family: "myFirstFont";
+    color: #6f7351;
 }
 @font-face {
     font-family: myFirstFont;
