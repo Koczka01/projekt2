@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: rgba(232, 213, 181, 1);
 }
 header{
     display: block;
@@ -35,8 +36,27 @@ header h1{
     font-family: myFirstFont;
     src: url(../assets/KaushanScript-Regular.ttf);
 }
-.akck {
-    text-align: center; 
-    margin-top: 5%;
-    font-size: 2%;
+.d1 h2, .d1 p{
+    margin: 0;
+    padding: 0;
+    height: 3vw;
+}
+.d1 {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+.d2 {
+    margin-top: 2%;
+    width: 100%;
+    line-height: 100%;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 160%;
+}
+#h2 {
+    margin-left: 20vw;
+}
+#p {
+    margin-left: 20vw;
 }
