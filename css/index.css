@@ -14,19 +14,22 @@ header{
     width: 95%;
     top: 0;
 }
+#lenyilo{
+    display: none;
+}
 header #menuikon{
     width: 5vw;
     display: none;
 }
-header div{
+header #kell{
     float: right;
     vertical-align: auto;
     height: 5vw;
 }
-header div a:hover{
+header #kell a:hover{
     color: white;
 }
-header div a{
+header #kell a{
     text-decoration: none;
     color: #2E1A5B;
     font-family: "myFirstFont";
@@ -96,7 +99,7 @@ header h1{
     text-align: center;
     font-size: 1vw;
 }
-#profilkep{
+.profilkep{
     width: 5vw;
     border-radius: 3vw;
 }
@@ -147,6 +150,8 @@ footer h1{
 {
     #bevezeto{
         grid-template-columns: 90vw;
+        margin-left: 5vw;
+        margin-top: 13vw;
     }
     #bevezeto #bal, #bevezeto #jobb{
         grid-column-start: 1;
@@ -161,12 +166,18 @@ footer h1{
     }
     header{
         grid-template-columns: 100%;
+        display: grid;
+        height: 10vw;
+        line-height: 10vw;
+        align-items: center;
+        z-index: 2;
     }
     header a{
         display: none;
     }
     header h1{
         width: 100%;
+        font-size: 7vw;
         text-align: center;
         z-index: 1;
         grid-column-start: 1;
@@ -175,13 +186,40 @@ footer h1{
         grid-row-end: 2 ;
     }
     header #menuikon{
-        width: 7vw;
+        width: 8vw;
         display: block;
-        margin-bottom: auto;
-        top: 0;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 2 ;
+        grid-row-end: 2;
+    }
+    #menuikon:hover #lenyilo{
+        display: block;
+        height: 50vw;
+    }
+    #ertekelesek{
+        flex-direction: column;
+        margin-bottom: 10vw;
+    }
+    #ertekelesek #elso, #ertekelesek #masodik, #ertekelesek #harmadik{
+        font-size: 3vw;
+    }
+    .profilkep{
+        width: 12vw;
+        border-radius: 6vw;
+    }
+    footer{
+        height: 10vw;
+        grid-template-columns: 10vw 20vw 10vw 10vw 10vw 10vw 5vw 7vw 7vw 7vw;
+    }
+    footer a{
+    font-size: 3vw;
+    }
+    footer h1{
+        font-size: 6vw;
+        margin-left: 1vw;
+    }
+    footer img{
+        width: 6vw;
     }
 }
