@@ -1,0 +1,83 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(232, 213, 181, 1);
+}
+header{
+    display: block;
+    height: 10vh;
+    background-color: #c76d39;
+    border: 2px solid black;
+    padding-top: auto;
+    line-height: 10vh;
+    padding: 0vw 4vw 0vw 2vw;
+}
+header div{
+    float: right;
+    vertical-align: auto;
+    height: 10vh;
+}
+header div a{
+    text-decoration: none;
+    color: #2E1A5B;
+    font-family: "myFirstFont";
+    margin-left: 2vw;
+    font-size: 2.5vw;
+}
+header h1{
+    display: inline-block;
+    margin: auto;
+    vertical-align: auto;
+    font-family: "myFirstFont";
+    font-size: 5vw;
+    color: #6f7351;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/KaushanScript-Regular.ttf);
+}
+.d1 h2, .d1 p{
+    margin: 0;
+    padding: 0;
+    height: 3vw;
+}
+.d1 {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+.d2 {
+    display: grid;
+    margin-top: 2%;
+    width: 100%;
+    line-height: 100%;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 160%;
+    grid-template-rows: 3vw 10vw;
+}
+#h2 {
+    margin-left: 20vw;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#p {
+    margin-left: 20vw;
+    margin-right: 3vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#kep1 {
+    margin-top: 1vw;
+    width: 7vw;
+    margin-left: 3vw;
+    grid-row-start: 1;
+    grid-row-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
