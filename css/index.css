@@ -5,10 +5,11 @@ html, body{
 }
 header{
     display: block;
-    height: 5vw;
+    justify-items: flex-start;
+    height: 3.5vw;
     background-color: #c76d39;
     padding-top: auto;
-    line-height: 5vw;
+    line-height: 3.5vw;
     padding: 0vw 4vw 0vw 2vw;
     position: fixed;
     width: 95%;
@@ -41,7 +42,7 @@ header h1{
     margin: auto;
     vertical-align: auto;
     font-family: "myFirstFont";
-    font-size: 4vw;
+    font-size: 3vw;
     color: #6f7351;
 }
 #bevezeto{
@@ -62,7 +63,7 @@ header h1{
 }
 #bevezeto #bal p{
     font-family: "myFirstFont";
-    color: #c76d39;
+    color: #E8D5B5;
 }
 #bevezeto #bal button{
     width: 15vw;
@@ -112,6 +113,7 @@ footer{
     width: 100%;
     position: fixed;
     font-family: "myFirstFont";
+    z-index: 1;
 }
 footer a{
     text-decoration: none;
@@ -119,13 +121,12 @@ footer a{
     font-size: 2vw;
 }
 footer img{
-    width: 4vw;
+    width: 3.5vw;
     margin: auto;
 }
 footer #elso{
     grid-column-start: 3;
     grid-column-end: 4;
-    line-height: 5vw;
     padding: auto;
 }
 footer #elsoa{
@@ -141,6 +142,9 @@ footer h1{
     font-size: 3vw;
     font-family: "myFirstFont";
     color: #6f7351;
+}
+#asd{
+    display: none;
 }
 @font-face {
     font-family: myFirstFont;
@@ -188,9 +192,8 @@ footer h1{
         width: 8vw;
         display: block;
     }
-    #menuikon:hover #lenyilo{
-        display: block;
-        height: 50vw;
+    header #menuikon:hover{
+        background-color: red;
     }
     #ertekelesek{
         flex-direction: column;
@@ -204,7 +207,7 @@ footer h1{
         border-radius: 6vw;
     }
     footer{
-        height: 10vw;
+        height: 8vw;
         grid-template-columns: 10vw 20vw 10vw 10vw 10vw 10vw 5vw 7vw 7vw 7vw;
     }
     footer a{
@@ -218,7 +221,7 @@ footer h1{
         width: 6vw;
     }
     #asd{
-        visibility: hidden;
+        display: block;
         width: 8vw;
     }
 }
