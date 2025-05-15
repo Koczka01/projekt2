@@ -8,7 +8,6 @@ header{
     justify-items: flex-start;
     height: 3.5vw;
     background-color: #c76d39;
-    padding-top: auto;
     line-height: 3.5vw;
     padding: 0vw 4vw 0vw 2vw;
     position: fixed;
@@ -17,14 +16,31 @@ header{
 }
 #lenyilo{
     display: none;
+    position: fixed;
+    width: 100%;
+    top: 10vw;
+    z-index: 2;
 }
-header #menuikon{
+#lenyilo a{
+    display: block;
+    z-index: 2;
+    text-align: center;
+    text-decoration: none;
+    color: #2E1A5B;
+    font-size: 7vw;
+    font-family: "myFirstFont";
+    background-color: #c76d39;
+    border: solid black 1px;
+    border-bottom: 0px;
+    padding: 1vw;
+    box-shadow: 0px 0px 5px black;
+}
+header .menuikon{
     width: 5vw;
     display: none;
 }
 header #kell{
     float: right;
-    vertical-align: auto;
     height: 5vw;
 }
 header #kell a:hover{
@@ -40,7 +56,6 @@ header #kell a{
 header h1{
     display: inline-block;
     margin: auto;
-    vertical-align: auto;
     font-family: "myFirstFont";
     font-size: 3vw;
     color: #6f7351;
@@ -49,7 +64,6 @@ header h1{
     display: grid;
     grid-template-columns: 40vw 40vw;
     margin-left: 5vw;
-    margin-top: 3vw;
     gap: 10vw;
     font-family: "myFirstFont";
     color: #6f7351;
@@ -63,7 +77,7 @@ header h1{
 }
 #bevezeto #bal p{
     font-family: "myFirstFont";
-    color: #E8D5B5;
+    color: #c76d39;
 }
 #bevezeto #bal button{
     width: 15vw;
@@ -85,17 +99,17 @@ header h1{
     font-family: "myFirstFont";
     margin-bottom: 5vw;
 }
-#ertekelesek #elso{
+#ertekelesek #e_elso{
     flex: 1;
     text-align: center;
     font-size: 1vw;
 }
-#ertekelesek #masodik{
+#ertekelesek #e_masodik{
     flex: 1;
     text-align: center;
     font-size: 1vw;
 }
-#ertekelesek #harmadik{
+#ertekelesek #e_harmadik{
     flex: 1;
     text-align: center;
     font-size: 1vw;
@@ -105,8 +119,7 @@ header h1{
     border-radius: 3vw;
 }
 footer{
-    display: grid;
-    grid-template-columns: 10vw 20vw 10vw 10vw 10vw 10vw 12vw 5vw 5vw 5vw;
+    display: flex;
     text-align: center;
     background-color: #c76d39;
     bottom: 0;
@@ -127,7 +140,6 @@ footer img{
 footer #elso{
     grid-column-start: 3;
     grid-column-end: 4;
-    padding: auto;
 }
 footer #elsoa{
     grid-column-start: 8;
@@ -137,13 +149,27 @@ footer h1, footer #elso, footer #masodik, footer #harmadik, footer #negyedik{
     margin: auto;
     color: #2E1A5B;
 }
+footer #elso, footer #masodik, footer #harmadik, footer #negyedik{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
 
 footer h1{
     font-size: 3vw;
     font-family: "myFirstFont";
     color: #6f7351;
 }
+footer p{
+    display: block;
+    margin-right: 1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1vw;
+}
 #asd{
+    display: none;
+}
+#copy{
     display: none;
 }
 @font-face {
@@ -188,23 +214,27 @@ footer h1{
         grid-row-start: 1;
         grid-row-end: 2 ;
     }
-    header #menuikon{
+    header .menuikon{
         width: 8vw;
         display: block;
-    }
-    header #menuikon:hover{
-        background-color: red;
     }
     #ertekelesek{
         flex-direction: column;
         margin-bottom: 10vw;
     }
-    #ertekelesek #elso, #ertekelesek #masodik, #ertekelesek #harmadik{
-        font-size: 3vw;
+    #ertekelesek #e_elso, #ertekelesek #e_masodik, #ertekelesek #e_harmadik{
+        font-size: 5vw;
     }
     .profilkep{
         width: 12vw;
         border-radius: 6vw;
+    }
+    #copy{
+        width: 100%;
+        position: fixed;
+        bottom: 2.7vw;
+        text-align: center;
+        background-color: #c76d39;
     }
     footer{
         height: 8vw;
@@ -220,8 +250,21 @@ footer h1{
     footer img{
         width: 6vw;
     }
+    footer p{
+        display: none;
+    }
     #asd{
         display: block;
         width: 8vw;
+    }
+    #bevezeto #bal p{
+        color: #E8D5B5;
+    }
+    #bevezeto #bal button{
+        width: 30vw;
+        height: 8vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        font-size: 5vw;
     }
 }
