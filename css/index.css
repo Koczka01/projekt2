@@ -3,17 +3,6 @@ html, body{
     padding: 0;
     background-color: #E8D5B5;
 }
-header{
-    display: block;
-    justify-items: flex-start;
-    height: 3.5vw;
-    background-color: #c76d39;
-    line-height: 3.5vw;
-    padding: 0vw 4vw 0vw 2vw;
-    position: fixed;
-    width: 95%;
-    top: 0;
-}
 #lenyilo{
     display: none;
     position: fixed;
@@ -34,31 +23,6 @@ header{
     border-bottom: 0px;
     padding: 1vw;
     box-shadow: 0px 0px 5px black;
-}
-header .menuikon{
-    width: 5vw;
-    display: none;
-}
-header #kell{
-    float: right;   
-    height: 5vw;
-}
-header #kell a:hover{
-    color: white;
-}
-header #kell a{
-    text-decoration: none;
-    color: #2E1A5B;
-    font-family: "myFirstFont";
-    margin-left: 2vw;
-    font-size: 2vw;
-}
-header h1{
-    display: inline-block;
-    margin: auto;
-    font-family: "myFirstFont";
-    font-size: 3vw;
-    color: #6f7351;
 }
 #bevezeto{
     display: grid;
@@ -118,55 +82,6 @@ header h1{
     width: 5vw;
     border-radius: 3vw;
 }
-footer{
-    display: flex;
-    text-align: center;
-    background-color: #c76d39;
-    bottom: 1vw;
-    width: 100%;
-    position: fixed;
-    font-family: "myFirstFont";
-    z-index: 1;
-    height: 4vw;
-}
-footer a{
-    text-decoration: none;
-    color: black;
-    font-size: 2vw;
-}
-footer img{
-    width: 3.5vw;
-    margin: auto;
-}
-footer #elso{
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-footer #elsoa{
-    grid-column-start: 8;
-    grid-column-end: 9;
-}
-footer h1, footer #elso, footer #masodik, footer #harmadik, footer #negyedik{
-    margin: auto;
-    color: #2E1A5B;
-}
-footer #elso, footer #masodik, footer #harmadik, footer #negyedik{
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-footer h1{
-    font-size: 3vw;
-    font-family: "myFirstFont";
-    color: #6f7351;
-}
-footer p{
-    display: block;
-    margin-right: 1vw;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1vw;
-}
 #asd{
     display: none;
 }
@@ -177,8 +92,7 @@ footer p{
     text-align: center;
     background-color: #c76d39;
     font-size: 1vw;
-    height: 1vw;
-    z-index: 2;
+    height: 1.5vw;
     margin: 0;
     padding: 0.1vw;
 }
@@ -204,30 +118,6 @@ footer p{
         margin: auto;
         font-size: 5vw;
     }
-    header{
-        display: flex;
-        height: 10vw;
-        line-height: 10vw;
-        align-items: center;
-        z-index: 2;
-    }
-    header a{
-        display: none;
-    }
-    header h1{
-        width: 100%;
-        font-size: 7vw;
-        text-align: center;
-        z-index: 1;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2 ;
-    }
-    header .menuikon{
-        width: 8vw;
-        display: block;
-    }
     #ertekelesek{
         flex-direction: column;
         margin-bottom: 10vw;
@@ -243,23 +133,6 @@ footer p{
         height: 3vw;
         font-size: 3vw;
         padding: 0.5vw;
-    }
-    footer{
-        height: 8vw;
-        bottom: 3vw;
-    }
-    footer a{
-    font-size: 3vw;
-    }
-    footer h1{
-        font-size: 6vw;
-        margin-left: 1vw;
-    }
-    footer img{
-        width: 6vw;
-    }
-    footer p{
-        display: none;
     }
     #asd{
         display: block;
