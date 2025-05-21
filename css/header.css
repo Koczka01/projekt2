@@ -34,6 +34,9 @@ header h1{
     font-size: 2.5vw;
     color: #6f7351;
 }
+#asd{
+    display: none;
+}
 @media screen and (max-width: 480px)
 {
     header{
@@ -59,5 +62,9 @@ header h1{
     header .menuikon{
         width: 8vw;
         display: block;
+    }
+    #asd{
+        display: block;
+        width: 8vw;
     }
 }
