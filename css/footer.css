@@ -40,6 +40,7 @@ footer h1{
     font-size: 3.5vw;
     font-family: "myFirstFont";
     color: #6f7351;
+    margin-left: 1vw;
 }
 footer p{
     display: block;

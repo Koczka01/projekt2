@@ -1,17 +1,15 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     background-color: rgba(232, 213, 181, 1);
 }
 
-body {
-    margin: 0;
-}
-
 @font-face {
     font-family: myFirstFont;
     src: url(../assets/KaushanScript-Regular.ttf);
+}
+header{
+    width: 95%;
 }
 
 .d1 h2,
@@ -39,8 +37,17 @@ body {
     grid-template-rows: 3vw 10vw;
 }
 
-.flex-container {
+#akcio {
     display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1vw;
+}
+
+.akcios, .konyvek{
+    padding: 1vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw;
 }
 
 #h2 {
@@ -51,33 +58,103 @@ body {
     margin-left: 20vw;
     margin-right: 3vw;
 }
+.akcios div{
+    overflow: hidden;
+}
 
-#sigmakep {
+.konyvkep{
     width: 11vw;
+    height: 15vw;
+}
+.konyvkep{
+    transition: transform .5s ease;
+}
+.konyvkep:hover{
+    transform: scale(1.2);
 }
 
-#agyilkoskep {
-    width: 11vw;
+#konyv_kategoriak{
+    display: flex;
+    justify-content: center;
+    background-color: #c76d39;
+    position: sticky;
+    top: 3vw;
+    z-index: 2;
+    border-top: solid 0.15vw;
 }
 
-.akcio1 {
-    width: 30%;
-    margin-left: 15vw;
-    font-family: "myFirstFont"
+.kategoria{
+    flex-basis: 15vw;
+    height: 2vw;
+    font-size: 1vw;
+    text-align: center;
+    text-decoration: none;
+    color: #2E1A5B;
+    border: solid black 0.15vw;
+    border-top: 0;
+    border-right: 0px;
+    padding-top: 0.7vw;
+}
+#utolso{
+    border-right: solid black 0.15vw;
+}
+.konyvek div{
+    overflow: hidden;
 }
 
-.akcio2 {
-    width: 30%;
-    margin-left: 15vw;
-    font-family: "myFirstFont";
+.csoportositas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vw;
 }
-
-.akcio3 {
-    width: 30%;
-    margin-left: 15vw;
-    font-family: "myFirstFont";
+.cim{
+    text-align: center;
 }
-
-#asigmakiskep {
-    width: 11vw;
+.konyvek{
+    flex-basis: 11vw;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.vasarlas{
+    display: flex;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.vasarlas button{
+    width: 6vw;
+    margin-left: 1vw;
+    font-size: 1vw;
+    height: 2.5vw;
+    margin-top: 0.25vw;
+    background-color: #c76d39;
+    border-radius: 0.7vw;
+    border: solid 0.15vw;
+}
+.konyvek h1{
+    height: 10vw;
+}
+@media screen and (max-width: 480px){
+    .kategoria{
+        display: none;
+    }
+    #akcio{
+        width: 90vw;
+    }
+    header{
+        position: fixed;
+        width: 47%;
+    }
+    #lenyilo{
+        width: 50%;
+    }
+    .akcioskonyvek{
+        margin-top: 10vw;
+    }
+    .konyvkep{
+    width: 40vw;
+    height: 50vw;
+    }
+    .konyvek{
+        flex-basis: 40vw;
+    }
 }
