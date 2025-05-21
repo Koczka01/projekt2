@@ -4,17 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/konyveink.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Helios</title>
 </head>
+
 <body>
     <header>
+        <a href="javascript:void(0);" class="menuikon" onclick="lenyilo()"><img src="images/menu.png" alt=""
+                class="menuikon"></a>
         <h1>Helios</h1>
-        <div><a href="#">Könyveink</a>
-        <a href="#">Rólunk</a>
-        <a href="#">Események</a></div>
+        <div id="asd"></div>
+        <div id='kell'>
+            <a href="konyveink.html">Könyveink</a>
+            <a href="#">Rólunk</a>
+            <a href="#">Események</a>
+        </div>
     </header>
-    <h2 class="akck">Akciós könyveink</h2>
+    <div id="lenyilo">
+        <a href="konyveink.html" class="lenyiloelemek">Könyveink</a>
+        <a href="#" class="lenyiloelemek">Rólunk</a>
+        <a href="#" class="lenyiloelemek">Események</a>
+    </div>
+
+    <div class="akcioskonyvek">
+        <h2>Akciós könyveink</h2>
         <p>Vidd el az alábbi könyveket akár 20% kedvezménnyel</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="akcio1">
+            <img id="asigmakiskep" src="images/asigma2.png">
+            <h1 class="akissigma">A sigma</h1>
+            <p>Kis Pista</p>
+        </div>
+
+        <div class="akcio2">
+            <img src="images/asigma2.png" id="sigmakep">
+            <h1 id="sigma">A sigma</h1>
+            <p id="sigmaszoveg">Józsika</p>
+        </div>
+
+        <div class="akcio3">
+            <img id="agyilkoskep" src="images/agyilkos.png">
+            <h2 id="h3">A gyilkos</h2>
+            <p id="p1">Jancsika</p>
+        </div>
+    </div>
+    <footer>
+        <h1>Helios</h1>
+        <a href="#" id="elso">telefon</a>
+        <a href="#" id='masodik'>telefon</a>
+        <a href="#" id='harmadik'>e-mail</a>
+        <a href="#" id='negyedik'>cím</a>
+        <img src="images/fb.png" alt="" id="elsoa">
+        <img src="images/insta.png" alt="">
+        <img src="images/x.png" alt="">
+    </footer>
+
+    <p id="copy">© 2025 Helios Kft. Minden jog fenntartva.</p>
 </body>
-</html>
