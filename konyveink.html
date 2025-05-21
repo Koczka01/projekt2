@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <header>
         <a href="javascript:void(0);" class="menuikon" onclick="lenyilo()"><img src="images/menu.png" alt=""
                 class="menuikon"></a>
-        <h1>Helios</h1>
+        <a href="index.html"><h1>Helios</h1></a>
         <div id="asd"></div>
         <div id='kell'>
             <a href="konyveink.html">Könyveink</a>
@@ -33,25 +33,290 @@
         <p>Vidd el az alábbi könyveket akár 20% kedvezménnyel</p>
     </div>
 
-    <div class="flex-container">
-        <div class="akcio1">
-            <img id="asigmakiskep" src="images/asigma2.png">
-            <h1 class="akissigma">A sigma</h1>
+    <div id="akcio">
+        <div class="akcios">
+            <div><img class="konyvkep" alt="konyv" src="images/asigma.png"></div>
+            <h1>A sigma</h1>
             <p>Kis Pista</p>
         </div>
 
-        <div class="akcio2">
-            <img src="images/asigma2.png" id="sigmakep">
-            <h1 id="sigma">A sigma</h1>
-            <p id="sigmaszoveg">Józsika</p>
+        <div class="akcios">
+            <div><img class="konyvkep" alt="konyv" src="images/azorvos.png"></div>
+            <h1>Az orvos</h1>
+            <p>Józsika</p>
         </div>
 
-        <div class="akcio3">
-            <img id="agyilkoskep" src="images/agyilkos.png">
-            <h2 id="h3">A gyilkos</h2>
-            <p id="p1">Jancsika</p>
+        <div class="akcios">
+            <div><img class="konyvkep" alt="konyv" src="images/agyilkos.png"></div>
+            <h2>A gyilkos</h2>
+            <p>Jancsika</p>
+        </div>
+
+        <div class="akcios">
+            <div><img class="konyvkep" alt="konyv" src="images/agyilkos.png"></div>
+            <h2>A hentes</h2>
+            <p id="kezikonyvecske">Jolika</p>
         </div>
     </div>
+
+    <div id="konyv_kategoriak">
+        <a href="#kezikonyvecske" class="kategoria">Klasszikus görög irodalom</a>
+        <a href="#oreszteia" class="kategoria">Görög filozófia és gondolkodás</a>
+        <a href="#elmelkedesek" class="kategoria">Görög történelem és kultúra</a>
+        <a href="#persian_fire" class="kategoria">Kortárs görög irodalom</a>
+        <a href="#percy" class="kategoria" id="utolso">Görög mitológia és fantasy</a>
+    </div>
+
+    <h1 class="cim">Klasszikus görög irodalom</h1>
+
+    <div class="csoportositas" id="csoportositas">
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Odusszeia.jpg"></div>
+            <h1>Odüsszeia</h1>
+            <p>Homérosz</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Iliasz.jpg"></div>
+            <h1>Iliász</h1>
+            <p>Homérosz</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Antigone.jpg"></div>
+            <h1>Antigoné</h1>
+            <p>Szophoklész</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Medeia.jpg"></div>
+            <h1>Médeia</h1>
+            <p>Euripidész</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Oreszteia.jpg"></div>
+            <h1>Oreszteia</h1>
+            <p id="oreszteia">Aiszkhülosz</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="cim" id="gfg">Görög filozófia és gondolkodás</h1>
+
+    <div class="csoportositas">
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Az_allam.jpg"></div>
+            <h1>Az állam</h1>
+            <p>Platón </p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Nikomakhoszi_etika.jpg"></div>
+            <h1>Nikomakhoszi etika</h1>
+            <p>Arisztotelész </p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Kezikonyvecske.jpg"></div>
+            <h1>Kézikönyvecske</h1>
+            <p>Epiktétosz </p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Az_elet_rovidsegerol.jpg"></div>
+            <h1>Az élet rövidségéről</h1>
+            <p>Szeneka</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Elmelkedesek.jpg"></div>
+            <h1>Elmélkedések</h1>
+            <p>Marcus Aurelius</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button id="elmelkedesek">Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="cim">Görög történelem és kultúra</h1>
+
+    <div class="csoportositas">
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/A_történodás.jpg"></div>
+            <h1>A történodás</h1>
+            <p>Hérodotosz </p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/A_peloponneszoszi_haboru_tortenete.jpg"></div>
+            <h1>Peloponnészoszi háború története</h1>
+            <p>Thuküdidész</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Introducing_the_Ancient_Greeks.jpg"></div>
+            <h1>Introducing the Ancient Greeks</h1>
+            <p>Edith Hall</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Spqr.jpg"></div>
+            <h1>SPQR</h1>
+            <p>Mary Beard</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Persian_fire.jpg"></div>
+            <h1>Persian Fire</h1>
+            <p>Tom Holland</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button id="persian_fire">Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="cim">Kortárs görög irodalom</h1>
+
+    <div class="csoportositas">
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Zorbasz.jpg"></div>
+            <h1>Zorbász, a görög</h1>
+            <p>Nikosz Kazantzakisz</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Akinek_meg_kell_halnia.jpg"></div>
+            <h1>Akinek meg kell halnia</h1>
+            <p>Nikosz Kazantzakisz</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Idegen_szavak_szotara.jpg"></div>
+            <h1>Idegen szavak szótára</h1>
+            <p>Vassilis Alexakis</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Bergyilkosok_esernyovel.jpg"></div>
+            <h1>Bérgyilkosok esernyővel</h1>
+            <p>Petros Markaris</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Kassandra_es_a_farkas.jpg"></div>
+            <h1>Kassandra és a farkas</h1>
+            <p>Margarita Karapanu</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="cim">Görög mitológia és fantasy</h1>
+
+    <div class="csoportositas">
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Mitosz.jpg"></div>
+            <h1>Mítosz</h1>
+            <p>Stephen Fry</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Kirke.jpg"></div>
+            <h1>Kirké</h1>
+            <p>Madeline Miller</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Akhilleusz_dala.jpg"></div>
+            <h1>Akhilleusz dala</h1>
+            <p>Madeline Miller</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/A_thousand_ships.jpg"></div>
+            <h1>A Thousand Ships</h1>
+            <p>Natalie Haynes</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button>Vásárlás</button>
+            </div>
+        </div>
+        <div class="konyvek">
+            <div><img class="konyvkep" alt="konyv" src="images/konyvek/Percy_jackson_es_az_olimposziak.jpg"></div>
+            <h1>Percy Jackson és az olimposziak</h1>
+            <p>Rick Riordan</p>
+            <div class="vasarlas">
+                <p>Ár: 9900</p>
+                <button id="percy">Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <h1>Helios</h1>
         <a href="#" id="elso">telefon</a>
@@ -64,4 +329,14 @@
     </footer>
 
     <p id="copy">© 2025 Helios Kft. Minden jog fenntartva.</p>
+    <script>
+    function lenyilo() {
+    var x = document.getElementById("lenyilo");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+    </script>
 </body>
