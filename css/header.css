@@ -1,0 +1,90 @@
+header{
+    display: block;
+    justify-items: flex-start;
+    height: 3vw;
+    background-color: #c76d39;
+    line-height: 3vw;
+    padding: 0vw 4vw 0vw 2vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+header .menuikon{
+    width: 5vw;
+    display: none;
+}
+header #kell{
+    float: right;   
+    height: 3vw;
+}
+header #kell a:hover{
+    color: white;
+}
+header #kell a{
+    text-decoration: none;
+    color: #2E1A5B;
+    font-family: "myFirstFont";
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+header h1{
+    display: inline-block;
+    margin: auto;
+    font-family: "myFirstFont";
+    font-size: 2.5vw;
+    color: #6f7351;
+}
+#asd{
+    display: none;
+}
+#lenyilo{
+    display: none;
+    position: fixed;
+    top: 10vw;
+    z-index: 2;
+}
+#lenyilo a{
+    display: block;
+    z-index: 2;
+    text-align: center;
+    text-decoration: none;
+    color: #2E1A5B;
+    font-size: 7vw;
+    font-family: "myFirstFont";
+    background-color: #c76d39;
+    border: solid black 1px;
+    border-bottom: 0px;
+    padding: 1vw;
+    box-shadow: 0px 0px 5px black;
+}
+@media screen and (max-width: 480px)
+{
+    header{
+        display: flex;
+        height: 10vw;
+        line-height: 10vw;
+        align-items: center;
+        z-index: 2;
+    }
+    header a{
+        display: none;
+    }
+    header h1{
+        width: 100%;
+        font-size: 7vw;
+        text-align: center;
+        z-index: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2 ;
+    }
+    header .menuikon{
+        width: 8vw;
+        display: block;
+    }
+    #asd{
+        display: block;
+        width: 8vw;
+    }
+}
